@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset=""UTF-8>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>231124cororo</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@200;400;800&display=swap" rel="stylesheet">
+
+    <style>
+        @font-face {
+        font-family: "GugakVariable";
+        src: url(GugakVariable_v2.ttf);
+    }
+    
+        html, body{
+            height: 100%;
+        }
+
+        h1{
+            font-style: none;
+            margin: 0;
+            font-size: 42pt;
+            line-height: 55pt;
+            font-weight: 800;
+        }
+        
+        .main_text{
+            display: flex;
+            margin: 120px;
+        }
+
+        .main_00{
+            overflow: hidden;
+            background-color: #121212;
+            margin: auto;
+            width: 100%;
+            height: 100vh;
+            background: linear-gradient(
+            to left,
+            rgba(0, 0, 0, 0) 40%,
+            rgba(0, 0, 0, 0.2) 60%,
+            rgba(0, 0, 0, 0.5) 75%,
+            rgba(0, 0, 0, 1) 100%
+          ), url(gugak_main_img01.JPG);
+            background-size: cover;
+            background-position: center center;
+            animation: fadein ease 3s;
+        }
+
+        @keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+
+        /* 캐릭터 소개*/
+.main_02{
+    background-color: #f9f9f9;
+    color: black;
+    height: 1080px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+.character_frame{
+    display: grid;
+    width: 1500px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin: auto;
+}
+
+.character_profile{
+    display: grid;
+    grid-template-rows: 1fr 100px 100px;
+    text-align: center;
+}
+
+/* .character01{
+    background: linear-gradient(#ffd202, #f9f9f9);
+    height: 500px;
+} */
+
+.name{
+    font-size: 15pt; color: #f9f9f9;
+    padding: 5px 25px;
+    padding-top: 7px;
+}
+
+.name01{
+    margin: auto;
+    background-color: #ffd202;
+    border-radius: 20px;
+}
+.name02{
+    margin: auto;
+    background-color: #d3cfcd;
+    border-radius: 20px;
+}
+.name03{
+    margin: auto;
+    background-color: #616161;
+    border-radius: 20px;
+}
+.name04{
+    margin: auto;
+    background-color: #0060ca;
+    border-radius: 20px;
+}
+.name05{
+    margin: auto;
+    background-color: #ff3033;
+    border-radius: 20px;
+}
+
+/* 인터렉션 */
+
+.main_05{
+    background-color: #121212;
+    color: #f9f9f9;
+    height: 1080px;
+}
+
+.interaction{
+    display: grid;
+    grid-template-columns: 1fr 550px;
+    align-items: center;
+    width: 1400px; height: 1080px;
+    margin: auto;
+}
+
+.gugak_text{
+    text-align: center;
+    font-size: 200pt;
+    font-family: "GugakVariable";
+    animation: gugak_interaction 1s infinite ease alternate 
+}
+
+@keyframes gugak_interaction { 
+    from { 
+        font-weight: 10;
+    } 
+    to { 
+        font-weight: 100;
+    } 
+}
+
+@keyframes gugak_touch { 
+    from { 
+        opacity: 20%;
+    } 
+    to { 
+        opacity: 90%;
+    } 
+}
+
+
+.gugak_iphone{
+    position: relative;
+}
+
+.gugak_button{
+    position: absolute;
+    right: 135px;
+    top: 260px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 283px; height: 470px;
+}
+
+.gugak_button img:hover{
+    filter: drop-shadow(0 0 3px #ffffff); 
+}
+
+.gugak_touch{
+    position: absolute;
+    right: 135px;
+    top: 730px;
+    display: grid;
+    width: 283px; height: 40px;
+    text-align: center;
+    align-items: center;
+
+    font-size: 12pt;
+    animation: gugak_touch 2s infinite ease alternate
+}
+
+@media screen and (max-width: 1400px){
+        .interaction{
+            width: 95%;
+            margin: 0 auto;
+        }
+        .character_frame{
+            width: 95%;
+            margin: 0px auto;
+        }
+    }
+
+
+    </style>
+</head>
+
+<body>
+
+    <!-- 표지 -->
+<div class="main_00">
+    <div class="main_text">
+        <h1>&lt;열려라! 국악사전&gt;
+            <br>전시 기획 및 운영</h1>
+    </div>
+
+</div> 
+
+    <!-- 캐릭터 소개 -->
+<div class="main_02">
+    <div class="character_frame">
+
+        <div class="character_profile">
+            <div class="character01">
+                <img src="gugak_character_01.png" width="100%">
+            </div>
+            <div class="name01">
+                <div class="name"><b>국악이</b></div>
+            </div>
+            <div class="detail">
+                국악 사랑이 유별난 리더이자
+                <br><열려라 국악사전!>의 주최자.
+                <br>국악의 즐거움을 널리 알리기 위해
+                <br>모두를 데리고 노들섬에 찾아왔다.
+            </div>
+        </div>
+        <div class="character_profile">
+            <div class="character02">
+                <img src="gugak_character_02.png" width="100%">
+            </div>
+            <div class="name02">
+                <div class="name"><b>얼씨구</b></div>
+            </div>
+            <div class="detail">
+                감성 충만한 국악 DJ.
+                <br>취미로 찻집을 운영하고 있다.
+                <br>엄선한 국악 플레이리스트에
+                <br>자신감이 가득하다.
+            </div>
+        </div>
+        <div class="character_profile">
+            <div class="character03">
+                <img src="gugak_character_03.png" width="100%">
+            </div>
+            <div class="name03">
+                <div class="name"><b>신명이</b></div>
+            </div>
+            <div class="detail">
+                지식이 풍부한 악기 수집가.
+                <br>신기술에도 능통해서 
+                <br>비밀리에 ‘국악 인터렉션’을
+                <br>개발하고 있다는 소문도...?
+            </div>
+        </div>
+        <div class="character_profile">
+            <div class="character04">
+                <img src="gugak_character_04.png" width="100%">
+            </div>
+            <div class="name04">
+                <div class="name"><b>지화자</b></div>
+            </div>
+            <div class="detail">
+                사진만 찍으면 인생샷!
+                <br>매일 리즈를 갱신하는 인기 셀럽.
+                <br>이틀 연속 같은 장신구를
+                <br>착용하지 않는 것으로 유명하다. 
+            </div>
+        </div>
+        <div class="character_profile">
+            <div class="character05">
+                <img src="gugak_character_05.png" width="100%">
+            </div>
+            <div class="name05">
+                <div class="name"><b>늴리리</b></div>
+            </div>
+            <div class="detail">
+                파티에 빠지지 않는 춤꾼.
+                <br>최근 ‘봉산탈춤’ 직캠이 역주행한 덕에,
+                <br>여기저기 행사에 불려다니며
+                <br>바쁘고 즐겁게 사는 중.
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- 인터렉션 -->
+<div class="main_05">
+    <div class="interaction">
+        <div class="item">
+            <div class="gugak_text">
+                덩
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="gugak_iphone">
+                <img src="gugak_iphone.png" width="550">
+                <div class="gugak_button">
+                    <img src="gugak_button01.png" width="100%">
+                    <img src="gugak_button02.png" width="100%">
+                    <img src="gugak_button03.png" width="100%">
+                    <img src="gugak_button04.png" width="100%">
+                    <img src="gugak_button05.png" width="100%">
+                    <img src="gugak_button06.png" width="100%">
+                </div>
+                <div class="gugak_touch">버튼을 눌러보세요</div>
+    </div>
+    
+</div>
+    
+</div>
+
+
+
+
+
+</body>

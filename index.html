@@ -5,97 +5,14 @@
     <meta charset=""UTF-8>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>231124cororo</title>
+    <link rel="stylesheet" href="style.css">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@200;400;800&display=swap" rel="stylesheet">
+<link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square-neo.css" rel="stylesheet">
 <style>
-    body {
-        margin: 0px;
-    }
-
-    .top {
-        display: flex;
-        flex-flow: row wrap;
-        width: 90%;
-        margin: 40px auto;
-        font-size: 15pt;
-    }
-
-    h2 {
-        padding: 200px;
-    }
-
-    .animated-title {
-        font-size:60px; 
-        position: relative; 
-        width: 100%;
-        max-width:100%; 
-        height: auto; 
-        padding:100px 0; 
-        overflow-x: hidden; 
-        overflow-y: hidden; 
-    }
-
-.animated-title .track {
-    position: absolute; 
-    white-space: nowrap;
-    will-change: transform;
-    animation: marquee 60s linear infinite; 
-}
-
-@keyframes marquee {
-  from { transform: translateX(0); }
-  to { transform: translateX(-50%); }
-}
-@media (hover: hover) and (min-width: 700px){
-.animated-title .content {-webkit-transform: translateY(calc(100% - 8rem)); transform: translateY(calc(100% - 8rem));}
-    }
-
-    body {
-        background-color: #121212;
-        color: white;
-    }
-    .filter {
-	    display: flex;
-        flex-flow: row wrap;
-        width: 90%;
-        margin: 40px auto;
-    }
-    .category {
-        margin: 7px;
-        padding: 7px;
-        padding-left: 20px; 
-        padding-right: 20px;
-        text-align: center;
-        font-size: 15pt;
-        border-radius: 20px;
-        border: 1px solid white;
-    }
-    .category:hover {
-        background-color: white;
-        color: black;
-    }
-
-    .works {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        justify-content: space-between;
-        width: 90%;
-        margin: 40px auto;
-        font-size: 17pt;
-    }
-    .box {
-        margin: 5px;
-        margin-bottom: 20px;
-    }
-    .box:hover {
-        opacity: 80%;
-    }
-    img {
-        width: 100%;
-    }
-    .title {
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
+    body{background-color: #121212;}
 </style>
 </head>
 
@@ -105,12 +22,6 @@
     </div>
 
     <h2></h2>
-
-    <div class="animated-title">
-        <div class="track">
-          <div class="content">&nbsp;왠지 멋있는 흐르는 글자&nbsp;왠지 멋있는 흐르는 글자&nbsp;왠지 멋있는 흐르는 글자&nbsp;왠지 멋있는 흐르는 글자&nbsp;왠지 멋있는 흐르는 글자&nbsp;왠지 멋있는 흐르는 글자</div>
-        </div>
-      </div>
       
     <div class="filter">
         <div class="category">All</div>
@@ -122,27 +33,27 @@
     </div>
 
     <div class="works">
-        <div class="box">
+        <div class="project">
+            <a href="project01.html"><img src="thumbnailsample.png"></a>
+            <div class="title">프로젝트명</div>
+        </div>
+        <div class="project">
             <a href=""><img src="thumbnailsample.png"></a>
             <div class="title">프로젝트명</div>
         </div>
-        <div class="box">
+        <div class="project">
             <a href=""><img src="thumbnailsample.png"></a>
             <div class="title">프로젝트명</div>
         </div>
-        <div class="box">
+        <div class="project">
             <a href=""><img src="thumbnailsample.png"></a>
             <div class="title">프로젝트명</div>
         </div>
-        <div class="box">
+        <div class="project">
             <a href=""><img src="thumbnailsample.png"></a>
             <div class="title">프로젝트명</div>
         </div>
-        <div class="box">
-            <a href=""><img src="thumbnailsample.png"></a>
-            <div class="title">프로젝트명</div>
-        </div>
-        <div class="box">
+        <div class="project">
             <a href=""><img src="thumbnailsample.png"></a>
             <div class="title">프로젝트명</div>
         </div>
